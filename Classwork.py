@@ -1,17 +1,16 @@
 user_name = input("Please enter your full name: ")
 secret_number_input = input("Please enter the secret number: ")
 
-# Validate the secret number first
 if secret_number_input.isdigit():
     secret_number = int(secret_number_input)
     print("Secret number accepted.")
 else:
     print("Invalid input! Please enter digits only.")
-    exit()  # Stop the game early if input is bad
+    exit() =
 
-# Start guessing loop
+
 attempts = 0
-guess_number = None  # We'll assign a value after validating input
+guess_number = None  
 
 while guess_number != secret_number:
     user_input = input(f"{user_name}, guess the number: ")
